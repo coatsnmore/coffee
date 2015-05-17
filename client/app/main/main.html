@@ -1,0 +1,57 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>'Mornin Gubnah!</h1>
+
+    <!-- main brand -->
+    <p class="lead">Kick-start your morning with some dirt coffee.</p>
+    <p class="lead">As of: {{now | date}}, we are featuring:</p>
+    <!-- main brand-->
+
+    
+    <div class="row">
+      <span class="col-md-4 square">
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </span>
+      <span class="col-md-4 square">
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </span>
+      <span class="col-md-4 square">
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </span>
+    </div>
+    <div class="row">
+      <span class="col-md-4 square">
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </span>
+      <span class="col-md-4 square">
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </span>
+      <span class="col-md-4 square">
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Real-Time Comments from our Loyal Subscribers</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in awesomeThings">
+        <li>{{thing.name}}</li>
+        <img src="assets/images/coffee-cup.png" alt="Coffee Cup">
+      </ul>
+    </div>
+  </div>
+
+  <form class="thing-form">
+    <label>How are we doing?</label>
+
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Gushing review here..." ng-model="newThing">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+      </span>
+    </p>
+  </form>
+</div>
